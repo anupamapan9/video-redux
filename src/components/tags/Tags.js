@@ -5,7 +5,7 @@ import Tag from './Tag';
 import { fetchTags } from '../../features/tags/tagsSlice';
 
 const Tags = () => {
-    const { tags, loading } = useSelector(state => state.tags)
+    const { tags } = useSelector(state => state.tags)
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(fetchTags())

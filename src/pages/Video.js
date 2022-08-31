@@ -1,10 +1,7 @@
 import React from 'react';
 import Player from '../components/description/Player';
 import VideoDescription from '../components/description/VideoDescription';
-import Footer from '../components/footer/Footer';
-import VideoGrid from '../components/grid/VideoGrid';
 import RelatedVideoListItem from '../components/list/RelatedVideoListItem';
-import Navbar from '../components/Navbar/Navbar'
 const Video = () => {
     return (
         <>

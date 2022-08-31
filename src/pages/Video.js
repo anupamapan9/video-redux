@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar/Navbar'
 const Video = () => {
     return (
         <>
-            <Navbar />
+
 
 
 
@@ -23,17 +23,6 @@ const Video = () => {
                     </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
-
-            <Footer />
         </>
     );
 };

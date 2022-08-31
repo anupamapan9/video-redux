@@ -1,11 +1,10 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:9000',
-    timeout: 1000,
+    baseURL: 'https://lws-server-anuapan9.herokuapp.com/',
     headers: {
         'content-type': "application/json"
     }
 })
 
-export default axiosInstance
+export default axiosInstance;

@@ -1,6 +1,6 @@
 import axios from '../../utils/axios'
 
-export const getVideos = async () => {
+export const getTags = async () => {
     const response = await axios.get('/videos2');
-    return response.data.videos
+    return response.data.tags;
 }

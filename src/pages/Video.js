@@ -6,6 +6,7 @@ import VideoDescription from '../components/description/VideoDescription';
 import Loading from '../components/ui/Loading';
 import RelatedVideoListItem from '../components/list/RelatedVideoListItem';
 import { fetchVideo } from '../features/Video/videoSlice';
+import RelatedVideos from '../components/list/RelatedVideos';
 const Video = () => {
     const { video, loading, isError, error } = useSelector(state => state.video)
     const dispatch = useDispatch();
@@ -30,7 +31,7 @@ const Video = () => {
                 <Player link={link} title={title} />
                 <VideoDescription video={video} />
             </div>
-            <RelatedVideoListItem id={id} tags={tags} />
+            <RelatedVideos id={id} tags={tags} />
         </div>
     }
 

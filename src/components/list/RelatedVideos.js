@@ -8,8 +8,8 @@ const RelatedVideos = ({ id, tags }) => {
     useEffect(() => {
         dispatch(fetchRelatedVideos({ tags, id }))
     }, [dispatch, tags, id])
-    const { videos, loading, isError, error } = useSelector(state => state.relatedVideos);
-    console.log(videos)
+    const { videos } = useSelector(state => state.relatedVideos);
+
     return (
         <div className="col-span-full lg:col-auto max-h-[570px] overflow-y-auto">
             {/* <!-- single related video --> */}
